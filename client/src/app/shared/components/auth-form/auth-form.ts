@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-auth-form',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './auth-form.scss'
 })
 export class AuthForm {
-
+  @Input() title: string = '';
+  @Input() subtitle: string = '';
 }
